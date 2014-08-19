@@ -19,6 +19,8 @@
 		C3A8429519A2CCFA007D036F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3A8427D19A2CCFA007D036F /* UIKit.framework */; };
 		C3A8429D19A2CCFA007D036F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C3A8429B19A2CCFA007D036F /* InfoPlist.strings */; };
 		C3A8429F19A2CCFA007D036F /* RampitAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C3A8429E19A2CCFA007D036F /* RampitAppTests.m */; };
+		C3A842AC19A2CF39007D036F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3A842AB19A2CF39007D036F /* Main.storyboard */; };
+		C3A842B019A2D1B6007D036F /* PlacesListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3A842AF19A2D1B6007D036F /* PlacesListTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +50,9 @@
 		C3A8429A19A2CCFA007D036F /* RampitAppTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RampitAppTests-Info.plist"; sourceTree = "<group>"; };
 		C3A8429C19A2CCFA007D036F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		C3A8429E19A2CCFA007D036F /* RampitAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RampitAppTests.m; sourceTree = "<group>"; };
+		C3A842AB19A2CF39007D036F /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		C3A842AE19A2D1B6007D036F /* PlacesListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PlacesListTableViewController.h; path = Frontend/PlacesListTableViewController.h; sourceTree = "<group>"; };
+		C3A842AF19A2D1B6007D036F /* PlacesListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PlacesListTableViewController.m; path = Frontend/PlacesListTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,10 +112,12 @@
 		C3A8427F19A2CCFA007D036F /* RampitApp */ = {
 			isa = PBXGroup;
 			children = (
+				C3A842AD19A2D17E007D036F /* Frontend */,
 				C3A8428819A2CCFA007D036F /* AppDelegate.h */,
 				C3A8428919A2CCFA007D036F /* AppDelegate.m */,
 				C3A8428B19A2CCFA007D036F /* Images.xcassets */,
 				C3A8428019A2CCFA007D036F /* Supporting Files */,
+				C3A842AB19A2CF39007D036F /* Main.storyboard */,
 			);
 			path = RampitApp;
 			sourceTree = "<group>";
@@ -142,6 +149,15 @@
 				C3A8429B19A2CCFA007D036F /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C3A842AD19A2D17E007D036F /* Frontend */ = {
+			isa = PBXGroup;
+			children = (
+				C3A842AE19A2D1B6007D036F /* PlacesListTableViewController.h */,
+				C3A842AF19A2D1B6007D036F /* PlacesListTableViewController.m */,
+			);
+			name = Frontend;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -219,6 +235,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C3A842AC19A2CF39007D036F /* Main.storyboard in Resources */,
 				C3A8428419A2CCFA007D036F /* InfoPlist.strings in Resources */,
 				C3A8428C19A2CCFA007D036F /* Images.xcassets in Resources */,
 			);
@@ -241,6 +258,7 @@
 			files = (
 				C3A8428A19A2CCFA007D036F /* AppDelegate.m in Sources */,
 				C3A8428619A2CCFA007D036F /* main.m in Sources */,
+				C3A842B019A2D1B6007D036F /* PlacesListTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
