@@ -4,7 +4,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
     <scenes>
-        <!--Places List Table View Controller - Item-->
+        <!--Places List Table View Controller-->
         <scene sceneID="osu-P6-YmG">
             <objects>
                 <tableViewController id="Ku7-m0-caW" customClass="PlacesListTableViewController" sceneMemberID="viewController">
@@ -17,7 +17,6 @@
                             <outlet property="delegate" destination="Ku7-m0-caW" id="AeX-ex-V4u"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Item" id="AL0-uD-mmt"/>
                     <navigationItem key="navigationItem" id="VRL-Jt-N4R"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Igh-12-2YF" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -43,31 +42,28 @@
             </objects>
             <point key="canvasLocation" x="77" y="5"/>
         </scene>
-        <!--View Controller - View 2-->
+        <!--Places Map View Controller-->
         <scene sceneID="cdT-w5-OBT">
             <objects>
-                <viewController title="View 2" id="kwq-ZG-g4F" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="Rv9-kG-lN6"/>
-                        <viewControllerLayoutGuide type="bottom" id="yXZ-qu-Wqb"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8Dd-Jp-sHN">
+                <viewController id="kwq-ZG-g4F" customClass="PlacesMapViewController" sceneMemberID="viewController">
+                    <mapView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" id="XWv-bl-E4J">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Item 2" id="hfF-cT-tj3"/>
-                    <navigationItem key="navigationItem" title="View 2" id="ZYP-Aq-2wS"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    </mapView>
+                    <navigationItem key="navigationItem" id="ZYP-Aq-2wS"/>
+                    <connections>
+                        <outlet property="mapView" destination="XWv-bl-E4J" id="m33-jk-3Cb"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7Xp-dm-RvS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1187" y="411"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Navigation Controller - Lista-->
         <scene sceneID="Ari-qL-VGX">
             <objects>
                 <navigationController definesPresentationContext="YES" id="4Kk-G0-cep" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" systemItem="favorites" id="kyN-UQ-wrX"/>
+                    <tabBarItem key="tabBarItem" title="Lista" image="list-icon.png" id="kyN-UQ-wrX"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="4nP-AX-G0i">
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -79,11 +75,11 @@
             </objects>
             <point key="canvasLocation" x="628" y="-393"/>
         </scene>
-        <!--Navigation Controller - View 2-->
+        <!--Navigation Controller - Mapa-->
         <scene sceneID="RfF-0g-yRn">
             <objects>
-                <navigationController title="View 2" definesPresentationContext="YES" id="QjN-Yg-Q4h" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" systemItem="bookmarks" id="Bed-Jx-Wyu"/>
+                <navigationController definesPresentationContext="YES" id="QjN-Yg-Q4h" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Mapa" image="map-icon.png" id="Bed-Jx-Wyu"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="UoE-M0-3UD">
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -96,6 +92,10 @@
             <point key="canvasLocation" x="620" y="411"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="list-icon.png" width="30" height="26"/>
+        <image name="map-icon.png" width="30" height="26"/>
+    </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

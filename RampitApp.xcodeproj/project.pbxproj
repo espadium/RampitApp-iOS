@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C359AE2519A40A8F00B23717 /* PlacesListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C359AE2419A40A8F00B23717 /* PlacesListTableViewController.m */; };
+		C359AE2719A40A9B00B23717 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C359AE2619A40A9B00B23717 /* Main.storyboard */; };
+		C359AE2E19A40BC000B23717 /* PlacesMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C359AE2D19A40BC000B23717 /* PlacesMapViewController.m */; };
+		C359AE3019A40EB100B23717 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C359AE2F19A40EB100B23717 /* MapKit.framework */; };
+		C359AE3319A4115C00B23717 /* PlacesMapViewAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = C359AE3219A4115C00B23717 /* PlacesMapViewAnnotation.m */; };
+		C359AE3719A4240600B23717 /* list-icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C359AE3519A4240600B23717 /* list-icon@2x.png */; };
+		C359AE3819A4240600B23717 /* map-icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C359AE3619A4240600B23717 /* map-icon@2x.png */; };
 		C3A8427A19A2CCFA007D036F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3A8427919A2CCFA007D036F /* Foundation.framework */; };
 		C3A8427C19A2CCFA007D036F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3A8427B19A2CCFA007D036F /* CoreGraphics.framework */; };
 		C3A8427E19A2CCFA007D036F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3A8427D19A2CCFA007D036F /* UIKit.framework */; };
@@ -19,8 +26,6 @@
 		C3A8429519A2CCFA007D036F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3A8427D19A2CCFA007D036F /* UIKit.framework */; };
 		C3A8429D19A2CCFA007D036F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C3A8429B19A2CCFA007D036F /* InfoPlist.strings */; };
 		C3A8429F19A2CCFA007D036F /* RampitAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C3A8429E19A2CCFA007D036F /* RampitAppTests.m */; };
-		C3A842AC19A2CF39007D036F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3A842AB19A2CF39007D036F /* Main.storyboard */; };
-		C3A842B019A2D1B6007D036F /* PlacesListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3A842AF19A2D1B6007D036F /* PlacesListTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +39,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C359AE2319A40A8F00B23717 /* PlacesListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PlacesListTableViewController.h; path = Frontend/PlacesListTable/PlacesListTableViewController.h; sourceTree = "<group>"; };
+		C359AE2419A40A8F00B23717 /* PlacesListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PlacesListTableViewController.m; path = Frontend/PlacesListTable/PlacesListTableViewController.m; sourceTree = "<group>"; };
+		C359AE2619A40A9B00B23717 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Frontend/Main.storyboard; sourceTree = "<group>"; };
+		C359AE2C19A40BC000B23717 /* PlacesMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PlacesMapViewController.h; path = Frontend/PlacesMap/PlacesMapViewController.h; sourceTree = "<group>"; };
+		C359AE2D19A40BC000B23717 /* PlacesMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PlacesMapViewController.m; path = Frontend/PlacesMap/PlacesMapViewController.m; sourceTree = "<group>"; };
+		C359AE2F19A40EB100B23717 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		C359AE3119A4115C00B23717 /* PlacesMapViewAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PlacesMapViewAnnotation.h; path = Frontend/PlacesMapViewAnnotation/PlacesMapViewAnnotation.h; sourceTree = "<group>"; };
+		C359AE3219A4115C00B23717 /* PlacesMapViewAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PlacesMapViewAnnotation.m; path = Frontend/PlacesMapViewAnnotation/PlacesMapViewAnnotation.m; sourceTree = "<group>"; };
+		C359AE3519A4240600B23717 /* list-icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "list-icon@2x.png"; sourceTree = "<group>"; };
+		C359AE3619A4240600B23717 /* map-icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "map-icon@2x.png"; sourceTree = "<group>"; };
 		C3A8427619A2CCFA007D036F /* RampitApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RampitApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3A8427919A2CCFA007D036F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		C3A8427B19A2CCFA007D036F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -50,9 +65,6 @@
 		C3A8429A19A2CCFA007D036F /* RampitAppTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RampitAppTests-Info.plist"; sourceTree = "<group>"; };
 		C3A8429C19A2CCFA007D036F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		C3A8429E19A2CCFA007D036F /* RampitAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RampitAppTests.m; sourceTree = "<group>"; };
-		C3A842AB19A2CF39007D036F /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
-		C3A842AE19A2D1B6007D036F /* PlacesListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PlacesListTableViewController.h; path = Frontend/PlacesListTableViewController.h; sourceTree = "<group>"; };
-		C3A842AF19A2D1B6007D036F /* PlacesListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PlacesListTableViewController.m; path = Frontend/PlacesListTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C359AE3019A40EB100B23717 /* MapKit.framework in Frameworks */,
 				C3A8427C19A2CCFA007D036F /* CoreGraphics.framework in Frameworks */,
 				C3A8427E19A2CCFA007D036F /* UIKit.framework in Frameworks */,
 				C3A8427A19A2CCFA007D036F /* Foundation.framework in Frameworks */,
@@ -79,6 +92,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C359AE2219A40A7900B23717 /* PlacesListTable */ = {
+			isa = PBXGroup;
+			children = (
+				C359AE2319A40A8F00B23717 /* PlacesListTableViewController.h */,
+				C359AE2419A40A8F00B23717 /* PlacesListTableViewController.m */,
+			);
+			name = PlacesListTable;
+			sourceTree = "<group>";
+		};
+		C359AE2819A40AA400B23717 /* PlacesMap */ = {
+			isa = PBXGroup;
+			children = (
+				C359AE2C19A40BC000B23717 /* PlacesMapViewController.h */,
+				C359AE2D19A40BC000B23717 /* PlacesMapViewController.m */,
+			);
+			name = PlacesMap;
+			sourceTree = "<group>";
+		};
+		C359AE3419A4240600B23717 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C359AE3519A4240600B23717 /* list-icon@2x.png */,
+				C359AE3619A4240600B23717 /* map-icon@2x.png */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		C3A8426D19A2CCFA007D036F = {
 			isa = PBXGroup;
 			children = (
@@ -101,6 +141,7 @@
 		C3A8427819A2CCFA007D036F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C359AE2F19A40EB100B23717 /* MapKit.framework */,
 				C3A8427919A2CCFA007D036F /* Foundation.framework */,
 				C3A8427B19A2CCFA007D036F /* CoreGraphics.framework */,
 				C3A8427D19A2CCFA007D036F /* UIKit.framework */,
@@ -112,12 +153,12 @@
 		C3A8427F19A2CCFA007D036F /* RampitApp */ = {
 			isa = PBXGroup;
 			children = (
+				C359AE3419A4240600B23717 /* Resources */,
 				C3A842AD19A2D17E007D036F /* Frontend */,
 				C3A8428819A2CCFA007D036F /* AppDelegate.h */,
 				C3A8428919A2CCFA007D036F /* AppDelegate.m */,
 				C3A8428B19A2CCFA007D036F /* Images.xcassets */,
 				C3A8428019A2CCFA007D036F /* Supporting Files */,
-				C3A842AB19A2CF39007D036F /* Main.storyboard */,
 			);
 			path = RampitApp;
 			sourceTree = "<group>";
@@ -154,8 +195,11 @@
 		C3A842AD19A2D17E007D036F /* Frontend */ = {
 			isa = PBXGroup;
 			children = (
-				C3A842AE19A2D1B6007D036F /* PlacesListTableViewController.h */,
-				C3A842AF19A2D1B6007D036F /* PlacesListTableViewController.m */,
+				C359AE2619A40A9B00B23717 /* Main.storyboard */,
+				C359AE2219A40A7900B23717 /* PlacesListTable */,
+				C359AE2819A40AA400B23717 /* PlacesMap */,
+				C359AE3119A4115C00B23717 /* PlacesMapViewAnnotation.h */,
+				C359AE3219A4115C00B23717 /* PlacesMapViewAnnotation.m */,
 			);
 			name = Frontend;
 			sourceTree = "<group>";
@@ -235,9 +279,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C3A842AC19A2CF39007D036F /* Main.storyboard in Resources */,
+				C359AE3819A4240600B23717 /* map-icon@2x.png in Resources */,
+				C359AE2719A40A9B00B23717 /* Main.storyboard in Resources */,
 				C3A8428419A2CCFA007D036F /* InfoPlist.strings in Resources */,
 				C3A8428C19A2CCFA007D036F /* Images.xcassets in Resources */,
+				C359AE3719A4240600B23717 /* list-icon@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,8 +303,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				C3A8428A19A2CCFA007D036F /* AppDelegate.m in Sources */,
+				C359AE2E19A40BC000B23717 /* PlacesMapViewController.m in Sources */,
+				C359AE3319A4115C00B23717 /* PlacesMapViewAnnotation.m in Sources */,
 				C3A8428619A2CCFA007D036F /* main.m in Sources */,
-				C3A842B019A2D1B6007D036F /* PlacesListTableViewController.m in Sources */,
+				C359AE2519A40A8F00B23717 /* PlacesListTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -457,6 +505,7 @@
 				C3A842A419A2CCFA007D036F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C3A842A519A2CCFA007D036F /* Build configuration list for PBXNativeTarget "RampitAppTests" */ = {
 			isa = XCConfigurationList;
@@ -465,6 +514,7 @@
 				C3A842A719A2CCFA007D036F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
