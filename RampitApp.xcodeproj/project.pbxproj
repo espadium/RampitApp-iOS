@@ -1,0 +1,454 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C3A8427A19A2CCFA007D036F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3A8427919A2CCFA007D036F /* Foundation.framework */; };
+		C3A8427C19A2CCFA007D036F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3A8427B19A2CCFA007D036F /* CoreGraphics.framework */; };
+		C3A8427E19A2CCFA007D036F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3A8427D19A2CCFA007D036F /* UIKit.framework */; };
+		C3A8428419A2CCFA007D036F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C3A8428219A2CCFA007D036F /* InfoPlist.strings */; };
+		C3A8428619A2CCFA007D036F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C3A8428519A2CCFA007D036F /* main.m */; };
+		C3A8428A19A2CCFA007D036F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C3A8428919A2CCFA007D036F /* AppDelegate.m */; };
+		C3A8428C19A2CCFA007D036F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C3A8428B19A2CCFA007D036F /* Images.xcassets */; };
+		C3A8429319A2CCFA007D036F /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3A8429219A2CCFA007D036F /* XCTest.framework */; };
+		C3A8429419A2CCFA007D036F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3A8427919A2CCFA007D036F /* Foundation.framework */; };
+		C3A8429519A2CCFA007D036F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3A8427D19A2CCFA007D036F /* UIKit.framework */; };
+		C3A8429D19A2CCFA007D036F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C3A8429B19A2CCFA007D036F /* InfoPlist.strings */; };
+		C3A8429F19A2CCFA007D036F /* RampitAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C3A8429E19A2CCFA007D036F /* RampitAppTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C3A8429619A2CCFA007D036F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C3A8426E19A2CCFA007D036F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C3A8427519A2CCFA007D036F;
+			remoteInfo = RampitApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C3A8427619A2CCFA007D036F /* RampitApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RampitApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C3A8427919A2CCFA007D036F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		C3A8427B19A2CCFA007D036F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		C3A8427D19A2CCFA007D036F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		C3A8428119A2CCFA007D036F /* RampitApp-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RampitApp-Info.plist"; sourceTree = "<group>"; };
+		C3A8428319A2CCFA007D036F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C3A8428519A2CCFA007D036F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C3A8428719A2CCFA007D036F /* RampitApp-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RampitApp-Prefix.pch"; sourceTree = "<group>"; };
+		C3A8428819A2CCFA007D036F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		C3A8428919A2CCFA007D036F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		C3A8428B19A2CCFA007D036F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		C3A8429119A2CCFA007D036F /* RampitAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RampitAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C3A8429219A2CCFA007D036F /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		C3A8429A19A2CCFA007D036F /* RampitAppTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RampitAppTests-Info.plist"; sourceTree = "<group>"; };
+		C3A8429C19A2CCFA007D036F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C3A8429E19A2CCFA007D036F /* RampitAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RampitAppTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C3A8427319A2CCFA007D036F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3A8427C19A2CCFA007D036F /* CoreGraphics.framework in Frameworks */,
+				C3A8427E19A2CCFA007D036F /* UIKit.framework in Frameworks */,
+				C3A8427A19A2CCFA007D036F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C3A8428E19A2CCFA007D036F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3A8429319A2CCFA007D036F /* XCTest.framework in Frameworks */,
+				C3A8429519A2CCFA007D036F /* UIKit.framework in Frameworks */,
+				C3A8429419A2CCFA007D036F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C3A8426D19A2CCFA007D036F = {
+			isa = PBXGroup;
+			children = (
+				C3A8427F19A2CCFA007D036F /* RampitApp */,
+				C3A8429819A2CCFA007D036F /* RampitAppTests */,
+				C3A8427819A2CCFA007D036F /* Frameworks */,
+				C3A8427719A2CCFA007D036F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C3A8427719A2CCFA007D036F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C3A8427619A2CCFA007D036F /* RampitApp.app */,
+				C3A8429119A2CCFA007D036F /* RampitAppTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C3A8427819A2CCFA007D036F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C3A8427919A2CCFA007D036F /* Foundation.framework */,
+				C3A8427B19A2CCFA007D036F /* CoreGraphics.framework */,
+				C3A8427D19A2CCFA007D036F /* UIKit.framework */,
+				C3A8429219A2CCFA007D036F /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C3A8427F19A2CCFA007D036F /* RampitApp */ = {
+			isa = PBXGroup;
+			children = (
+				C3A8428819A2CCFA007D036F /* AppDelegate.h */,
+				C3A8428919A2CCFA007D036F /* AppDelegate.m */,
+				C3A8428B19A2CCFA007D036F /* Images.xcassets */,
+				C3A8428019A2CCFA007D036F /* Supporting Files */,
+			);
+			path = RampitApp;
+			sourceTree = "<group>";
+		};
+		C3A8428019A2CCFA007D036F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C3A8428119A2CCFA007D036F /* RampitApp-Info.plist */,
+				C3A8428219A2CCFA007D036F /* InfoPlist.strings */,
+				C3A8428519A2CCFA007D036F /* main.m */,
+				C3A8428719A2CCFA007D036F /* RampitApp-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C3A8429819A2CCFA007D036F /* RampitAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				C3A8429E19A2CCFA007D036F /* RampitAppTests.m */,
+				C3A8429919A2CCFA007D036F /* Supporting Files */,
+			);
+			path = RampitAppTests;
+			sourceTree = "<group>";
+		};
+		C3A8429919A2CCFA007D036F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C3A8429A19A2CCFA007D036F /* RampitAppTests-Info.plist */,
+				C3A8429B19A2CCFA007D036F /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C3A8427519A2CCFA007D036F /* RampitApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C3A842A219A2CCFA007D036F /* Build configuration list for PBXNativeTarget "RampitApp" */;
+			buildPhases = (
+				C3A8427219A2CCFA007D036F /* Sources */,
+				C3A8427319A2CCFA007D036F /* Frameworks */,
+				C3A8427419A2CCFA007D036F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RampitApp;
+			productName = RampitApp;
+			productReference = C3A8427619A2CCFA007D036F /* RampitApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C3A8429019A2CCFA007D036F /* RampitAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C3A842A519A2CCFA007D036F /* Build configuration list for PBXNativeTarget "RampitAppTests" */;
+			buildPhases = (
+				C3A8428D19A2CCFA007D036F /* Sources */,
+				C3A8428E19A2CCFA007D036F /* Frameworks */,
+				C3A8428F19A2CCFA007D036F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C3A8429719A2CCFA007D036F /* PBXTargetDependency */,
+			);
+			name = RampitAppTests;
+			productName = RampitAppTests;
+			productReference = C3A8429119A2CCFA007D036F /* RampitAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C3A8426E19A2CCFA007D036F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = AccesibleUY;
+				TargetAttributes = {
+					C3A8429019A2CCFA007D036F = {
+						TestTargetID = C3A8427519A2CCFA007D036F;
+					};
+				};
+			};
+			buildConfigurationList = C3A8427119A2CCFA007D036F /* Build configuration list for PBXProject "RampitApp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = C3A8426D19A2CCFA007D036F;
+			productRefGroup = C3A8427719A2CCFA007D036F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C3A8427519A2CCFA007D036F /* RampitApp */,
+				C3A8429019A2CCFA007D036F /* RampitAppTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C3A8427419A2CCFA007D036F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3A8428419A2CCFA007D036F /* InfoPlist.strings in Resources */,
+				C3A8428C19A2CCFA007D036F /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C3A8428F19A2CCFA007D036F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3A8429D19A2CCFA007D036F /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C3A8427219A2CCFA007D036F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3A8428A19A2CCFA007D036F /* AppDelegate.m in Sources */,
+				C3A8428619A2CCFA007D036F /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C3A8428D19A2CCFA007D036F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3A8429F19A2CCFA007D036F /* RampitAppTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C3A8429719A2CCFA007D036F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C3A8427519A2CCFA007D036F /* RampitApp */;
+			targetProxy = C3A8429619A2CCFA007D036F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C3A8428219A2CCFA007D036F /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C3A8428319A2CCFA007D036F /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		C3A8429B19A2CCFA007D036F /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C3A8429C19A2CCFA007D036F /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C3A842A019A2CCFA007D036F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C3A842A119A2CCFA007D036F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C3A842A319A2CCFA007D036F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RampitApp/RampitApp-Prefix.pch";
+				INFOPLIST_FILE = "RampitApp/RampitApp-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		C3A842A419A2CCFA007D036F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RampitApp/RampitApp-Prefix.pch";
+				INFOPLIST_FILE = "RampitApp/RampitApp-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		C3A842A619A2CCFA007D036F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/RampitApp.app/RampitApp";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RampitApp/RampitApp-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "RampitAppTests/RampitAppTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		C3A842A719A2CCFA007D036F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/RampitApp.app/RampitApp";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RampitApp/RampitApp-Prefix.pch";
+				INFOPLIST_FILE = "RampitAppTests/RampitAppTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C3A8427119A2CCFA007D036F /* Build configuration list for PBXProject "RampitApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C3A842A019A2CCFA007D036F /* Debug */,
+				C3A842A119A2CCFA007D036F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C3A842A219A2CCFA007D036F /* Build configuration list for PBXNativeTarget "RampitApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C3A842A319A2CCFA007D036F /* Debug */,
+				C3A842A419A2CCFA007D036F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		C3A842A519A2CCFA007D036F /* Build configuration list for PBXNativeTarget "RampitAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C3A842A619A2CCFA007D036F /* Debug */,
+				C3A842A719A2CCFA007D036F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C3A8426E19A2CCFA007D036F /* Project object */;
+}
