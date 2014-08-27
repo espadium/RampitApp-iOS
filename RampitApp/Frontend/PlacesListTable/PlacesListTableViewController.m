@@ -7,6 +7,7 @@
 //
 
 #import "PlacesListTableViewController.h"
+#import "APIServiceManager.h"
 
 #define kPlacesListCellIdentifier @"placesListCellIdentifier"
 
@@ -23,6 +24,13 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.navigationItem.title = @"Lugares";
+    [[APIServiceManager sharedInstance] getPlacesListWithSuccessHandler:^(NSArray *places) {
+        NSLog(@"Success!");
+        self.places = places;
+        [self.tableView reloadData];
+    } onError:^(NSError *error) {
+        NSLog(@"Error");
+    }];
     self.tableView = [[UITableView alloc] initWithFrame:self.view.frame style:UITableViewStyleGrouped];
 }
 
@@ -43,16 +51,6 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
-}
-
-#pragma mark - Dictionary
-
-- (NSArray *)places {
-#warning GO: Replace with data from API
-    NSArray *places = @[@"Un lugar",
-                        @"Otro lugar",
-                        @"Aún otro lugar"];
-    return places;
 }
 
 @end

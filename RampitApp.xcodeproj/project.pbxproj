@@ -26,6 +26,7 @@
 		C3A8429519A2CCFA007D036F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3A8427D19A2CCFA007D036F /* UIKit.framework */; };
 		C3A8429D19A2CCFA007D036F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C3A8429B19A2CCFA007D036F /* InfoPlist.strings */; };
 		C3A8429F19A2CCFA007D036F /* RampitAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C3A8429E19A2CCFA007D036F /* RampitAppTests.m */; };
+		C3D7C5CA19AD48A400E3E3ED /* APIServiceManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C3D7C5C919AD48A400E3E3ED /* APIServiceManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +66,8 @@
 		C3A8429A19A2CCFA007D036F /* RampitAppTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RampitAppTests-Info.plist"; sourceTree = "<group>"; };
 		C3A8429C19A2CCFA007D036F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		C3A8429E19A2CCFA007D036F /* RampitAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RampitAppTests.m; sourceTree = "<group>"; };
+		C3D7C5C819AD48A400E3E3ED /* APIServiceManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = APIServiceManager.h; path = ServiceManagers/APIServiceManager.h; sourceTree = "<group>"; };
+		C3D7C5C919AD48A400E3E3ED /* APIServiceManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = APIServiceManager.m; path = ServiceManagers/APIServiceManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -153,6 +156,7 @@
 		C3A8427F19A2CCFA007D036F /* RampitApp */ = {
 			isa = PBXGroup;
 			children = (
+				C3D7C5C719AD47AA00E3E3ED /* ServiceManagers */,
 				C359AE3419A4240600B23717 /* Resources */,
 				C3A842AD19A2D17E007D036F /* Frontend */,
 				C3A8428819A2CCFA007D036F /* AppDelegate.h */,
@@ -202,6 +206,15 @@
 				C359AE3219A4115C00B23717 /* PlacesMapViewAnnotation.m */,
 			);
 			name = Frontend;
+			sourceTree = "<group>";
+		};
+		C3D7C5C719AD47AA00E3E3ED /* ServiceManagers */ = {
+			isa = PBXGroup;
+			children = (
+				C3D7C5C819AD48A400E3E3ED /* APIServiceManager.h */,
+				C3D7C5C919AD48A400E3E3ED /* APIServiceManager.m */,
+			);
+			name = ServiceManagers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -302,6 +315,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C3D7C5CA19AD48A400E3E3ED /* APIServiceManager.m in Sources */,
 				C3A8428A19A2CCFA007D036F /* AppDelegate.m in Sources */,
 				C359AE2E19A40BC000B23717 /* PlacesMapViewController.m in Sources */,
 				C359AE3319A4115C00B23717 /* PlacesMapViewAnnotation.m in Sources */,
