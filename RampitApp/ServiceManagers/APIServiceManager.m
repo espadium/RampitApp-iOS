@@ -8,7 +8,10 @@
 
 #import "APIServiceManager.h"
 
-#define kAPIServiceManagerBaseURL @"http://localhost:9292"
+#import "ModelParser.h"
+#import "Place.h"
+
+#define kAPIServiceManagerBaseURL @"http://rampita-api.herokuapp.com/api/v1"
 
 @interface APIServiceManager () <NSURLSessionDelegate>
 
@@ -55,7 +58,12 @@
                                                completionHandler:^(NSData *data,
                                                                    NSURLResponse *response,
                                                                    NSError *error) {
-                                                   NSArray *places = [NSJSONSerialization JSONObjectWithData:data options:0 error:nil];
+                                                   NSArray *placesData = [NSJSONSerialization JSONObjectWithData:data options:0 error:nil];
+                                                   NSMutableArray *places = [NSMutableArray new];
+                                                   for (NSDictionary *placeData in placesData) {
+                                                       Place *place = [ModelParser parsePlaceFromAPIData:placeData];
+                                                       [places addObject:place];
+                                                   }
                                                    dispatch_async(dispatch_get_main_queue(), ^{
                                                        successHandler(places);
                                                    });
@@ -69,7 +77,7 @@
                                 onError:(APIServiceManagerErrorHandler)errorHandler {
 
 #warning Change to define method, replace with real places list API URL
-    NSString *url = @"/foo/bar";
+    NSString *url = @"/places";
     [self performRequestForURLString:url onSuccess:successHandler onError:errorHandler];
 }
 

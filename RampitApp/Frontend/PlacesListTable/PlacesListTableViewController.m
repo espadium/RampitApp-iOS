@@ -7,7 +7,9 @@
 //
 
 #import "PlacesListTableViewController.h"
+
 #import "APIServiceManager.h"
+#import "Place.h"
 
 #define kPlacesListCellIdentifier @"placesListCellIdentifier"
 
@@ -24,14 +26,20 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.navigationItem.title = @"Lugares";
+    self.tableView = [[UITableView alloc] initWithFrame:self.view.frame style:UITableViewStyleGrouped];
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
     [[APIServiceManager sharedInstance] getPlacesListWithSuccessHandler:^(NSArray *places) {
         NSLog(@"Success!");
-        self.places = places;
-        [self.tableView reloadData];
+        if ([places count] > 0) {
+            self.places = places;
+            [self.tableView reloadData];
+        }
     } onError:^(NSError *error) {
         NSLog(@"Error");
     }];
-    self.tableView = [[UITableView alloc] initWithFrame:self.view.frame style:UITableViewStyleGrouped];
 }
 
 #pragma mark - Table View
@@ -45,7 +53,9 @@
     if (!cell) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:kPlacesListCellIdentifier];
     }
-    cell.textLabel.text = self.places[indexPath.row];
+#warning Should use a Place object
+    Place *aPlace = self.places[indexPath.row];
+    cell.textLabel.text = aPlace.name;
     return cell;
 }
 
