@@ -1,51 +1,60 @@
 //
-//  PlacesListTableViewController.m
+//  PlacesListViewController.m
 //  RampitApp
 //
 //  Created by Gabriel Osorio on 8/18/14.
 //  Copyright (c) 2014 AccesibleUY. All rights reserved.
 //
 
-#import "PlacesListTableViewController.h"
+#import "PlacesListViewController.h"
 
 #import "APIServiceManager.h"
 #import "Place.h"
 
 #define kPlacesListCellIdentifier @"placesListCellIdentifier"
 
-@interface PlacesListTableViewController ()
+@interface PlacesListViewController () <UITableViewDataSource, UITableViewDelegate>
 
-@property (nonatomic, strong) NSArray *places;
+// UI Elements
+@property (nonatomic, strong) UITableView *tableView;
 
 @end
 
-@implementation PlacesListTableViewController
+@implementation PlacesListViewController
 
 #pragma mark - View Lifecycle
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.navigationItem.title = @"Lugares";
-    self.tableView = [[UITableView alloc] initWithFrame:self.view.frame style:UITableViewStyleGrouped];
+    self.tableView = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStyleGrouped];
+    self.tableView.delegate = self;
+    self.tableView.dataSource = self;
+    [self.view addSubview:self.tableView];
 }
 
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
-    [[APIServiceManager sharedInstance] getPlacesListWithSuccessHandler:^(NSArray *places) {
-        NSLog(@"Success!");
-        if ([places count] > 0) {
-            self.places = places;
-            [self.tableView reloadData];
-        }
+    [self fetchPlaces];
+}
+
+- (void)fetchPlaces {
+    [super fetchPlacesOnSuccess:^{
+        [self.tableView reloadData];
     } onError:^(NSError *error) {
-        NSLog(@"Error");
+        [[[UIAlertView alloc] initWithTitle:@"Opa, che..."
+                                    message:@"No se pudo acceder al servidor."
+                                   delegate:self
+                          cancelButtonTitle:@"Cancelar"
+                          otherButtonTitles:@"Reintentar", nil]
+         show];
     }];
 }
 
 #pragma mark - Table View
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return self.places.count;
+    return super.places.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -53,8 +62,7 @@
     if (!cell) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:kPlacesListCellIdentifier];
     }
-#warning Should use a Place object
-    Place *aPlace = self.places[indexPath.row];
+    Place *aPlace = super.places[indexPath.row];
     cell.textLabel.text = aPlace.name;
     return cell;
 }

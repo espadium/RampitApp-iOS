@@ -1,28 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="z1l-tN-XXS">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="14A386b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="z1l-tN-XXS">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
     </dependencies>
     <scenes>
-        <!--Places List Table View Controller-->
-        <scene sceneID="osu-P6-YmG">
-            <objects>
-                <tableViewController id="Ku7-m0-caW" customClass="PlacesListTableViewController" sceneMemberID="viewController">
-                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="AEk-7y-e5w">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <connections>
-                            <outlet property="dataSource" destination="Ku7-m0-caW" id="Zva-Qp-3jz"/>
-                            <outlet property="delegate" destination="Ku7-m0-caW" id="AeX-ex-V4u"/>
-                        </connections>
-                    </tableView>
-                    <navigationItem key="navigationItem" id="VRL-Jt-N4R"/>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Igh-12-2YF" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1187" y="-393"/>
-        </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="GSf-b0-ltp">
             <objects>
@@ -42,6 +23,25 @@
             </objects>
             <point key="canvasLocation" x="77" y="5"/>
         </scene>
+        <!--Places List View Controller-->
+        <scene sceneID="jqh-Vs-4mD">
+            <objects>
+                <viewController id="fY8-Us-IYS" customClass="PlacesListViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="aNQ-oP-9DY"/>
+                        <viewControllerLayoutGuide type="bottom" id="dUZ-WB-AvH"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="HQi-ns-nzY">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="jOz-be-f6b"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0Vq-ds-tiM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1187" y="-393"/>
+        </scene>
         <!--Places Map View Controller-->
         <scene sceneID="cdT-w5-OBT">
             <objects>
@@ -59,7 +59,7 @@
             </objects>
             <point key="canvasLocation" x="1187" y="411"/>
         </scene>
-        <!--Navigation Controller - Lista-->
+        <!--Lista-->
         <scene sceneID="Ari-qL-VGX">
             <objects>
                 <navigationController definesPresentationContext="YES" id="4Kk-G0-cep" sceneMemberID="viewController">
@@ -68,14 +68,14 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="Ku7-m0-caW" kind="relationship" relationship="rootViewController" id="LPO-Js-DEQ"/>
+                        <segue destination="fY8-Us-IYS" kind="relationship" relationship="rootViewController" id="CgM-CV-qfh"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pUd-Gf-rmh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="628" y="-393"/>
         </scene>
-        <!--Navigation Controller - Mapa-->
+        <!--Mapa-->
         <scene sceneID="RfF-0g-yRn">
             <objects>
                 <navigationController definesPresentationContext="YES" id="QjN-Yg-Q4h" sceneMemberID="viewController">

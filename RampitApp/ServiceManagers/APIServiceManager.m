@@ -64,9 +64,16 @@
                                                        Place *place = [ModelParser parsePlaceFromAPIData:placeData];
                                                        [places addObject:place];
                                                    }
-                                                   dispatch_async(dispatch_get_main_queue(), ^{
-                                                       successHandler(places);
-                                                   });
+
+                                                   if (error) {
+                                                       dispatch_async(dispatch_get_main_queue(), ^{
+                                                           errorHandler(error);
+                                                       });
+                                                   } else {
+                                                       dispatch_async(dispatch_get_main_queue(), ^{
+                                                           successHandler(places);
+                                                       });
+                                                   }
     }];
     [requestTask resume];
 }

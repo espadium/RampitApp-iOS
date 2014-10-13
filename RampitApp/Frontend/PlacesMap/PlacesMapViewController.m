@@ -19,9 +19,6 @@
 // UI Elements
 @property (strong, nonatomic) IBOutlet MKMapView *mapView;
 
-// Data
-@property (strong, nonatomic) NSArray *places;
-
 @end
 
 @implementation PlacesMapViewController
@@ -44,7 +41,6 @@
         NSLog(@"Error");
     }];
 }
-
 
 - (void)showPlacesOnMap {
     for (Place *place in self.places) {

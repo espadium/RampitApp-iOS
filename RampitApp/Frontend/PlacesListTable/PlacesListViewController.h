@@ -1,5 +1,5 @@
 //
-//  PlacesListTableViewController.h
+//  PlacesListViewController.h
 //  RampitApp
 //
 //  Created by Gabriel Osorio on 8/18/14.
@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface PlacesListTableViewController : UITableViewController
+#import "PlacesVisualizationViewController.h"
+
+@interface PlacesListViewController : PlacesVisualizationViewController
 
 @end

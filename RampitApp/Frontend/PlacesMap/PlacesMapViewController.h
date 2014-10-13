@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface PlacesMapViewController : UIViewController
+#import "PlacesVisualizationViewController.h"
+
+@interface PlacesMapViewController : PlacesVisualizationViewController
 
 @end

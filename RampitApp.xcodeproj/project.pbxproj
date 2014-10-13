@@ -7,13 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C359AE2519A40A8F00B23717 /* PlacesListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C359AE2419A40A8F00B23717 /* PlacesListTableViewController.m */; };
+		C359AE2519A40A8F00B23717 /* PlacesListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C359AE2419A40A8F00B23717 /* PlacesListViewController.m */; };
 		C359AE2719A40A9B00B23717 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C359AE2619A40A9B00B23717 /* Main.storyboard */; };
 		C359AE2E19A40BC000B23717 /* PlacesMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C359AE2D19A40BC000B23717 /* PlacesMapViewController.m */; };
 		C359AE3019A40EB100B23717 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C359AE2F19A40EB100B23717 /* MapKit.framework */; };
 		C359AE3319A4115C00B23717 /* PlacesMapViewAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = C359AE3219A4115C00B23717 /* PlacesMapViewAnnotation.m */; };
 		C359AE3719A4240600B23717 /* list-icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C359AE3519A4240600B23717 /* list-icon@2x.png */; };
 		C359AE3819A4240600B23717 /* map-icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C359AE3619A4240600B23717 /* map-icon@2x.png */; };
+		C397D5B319CBB006006FD778 /* PlacesVisualizationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C397D5B219CBB006006FD778 /* PlacesVisualizationViewController.m */; };
 		C3A5D4CD19B6AB2F00346EEC /* Place.m in Sources */ = {isa = PBXBuildFile; fileRef = C3A5D4CC19B6AB2F00346EEC /* Place.m */; };
 		C3A5D4D019B6AD5F00346EEC /* ModelParser.m in Sources */ = {isa = PBXBuildFile; fileRef = C3A5D4CF19B6AD5F00346EEC /* ModelParser.m */; };
 		C3A8427A19A2CCFA007D036F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3A8427919A2CCFA007D036F /* Foundation.framework */; };
@@ -42,8 +43,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		C359AE2319A40A8F00B23717 /* PlacesListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PlacesListTableViewController.h; path = Frontend/PlacesListTable/PlacesListTableViewController.h; sourceTree = "<group>"; };
-		C359AE2419A40A8F00B23717 /* PlacesListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PlacesListTableViewController.m; path = Frontend/PlacesListTable/PlacesListTableViewController.m; sourceTree = "<group>"; };
+		C359AE2319A40A8F00B23717 /* PlacesListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PlacesListViewController.h; path = Frontend/PlacesListTable/PlacesListViewController.h; sourceTree = "<group>"; };
+		C359AE2419A40A8F00B23717 /* PlacesListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PlacesListViewController.m; path = Frontend/PlacesListTable/PlacesListViewController.m; sourceTree = "<group>"; };
 		C359AE2619A40A9B00B23717 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Frontend/Main.storyboard; sourceTree = "<group>"; };
 		C359AE2C19A40BC000B23717 /* PlacesMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PlacesMapViewController.h; path = Frontend/PlacesMap/PlacesMapViewController.h; sourceTree = "<group>"; };
 		C359AE2D19A40BC000B23717 /* PlacesMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PlacesMapViewController.m; path = Frontend/PlacesMap/PlacesMapViewController.m; sourceTree = "<group>"; };
@@ -52,6 +53,8 @@
 		C359AE3219A4115C00B23717 /* PlacesMapViewAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PlacesMapViewAnnotation.m; path = Frontend/PlacesMapViewAnnotation/PlacesMapViewAnnotation.m; sourceTree = "<group>"; };
 		C359AE3519A4240600B23717 /* list-icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "list-icon@2x.png"; sourceTree = "<group>"; };
 		C359AE3619A4240600B23717 /* map-icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "map-icon@2x.png"; sourceTree = "<group>"; };
+		C397D5B119CBB006006FD778 /* PlacesVisualizationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PlacesVisualizationViewController.h; path = Frontend/PlacesVisualization/PlacesVisualizationViewController.h; sourceTree = "<group>"; };
+		C397D5B219CBB006006FD778 /* PlacesVisualizationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PlacesVisualizationViewController.m; path = Frontend/PlacesVisualization/PlacesVisualizationViewController.m; sourceTree = "<group>"; };
 		C3A5D4CB19B6AB2F00346EEC /* Place.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Place.h; path = Models/Place.h; sourceTree = "<group>"; };
 		C3A5D4CC19B6AB2F00346EEC /* Place.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Place.m; path = Models/Place.m; sourceTree = "<group>"; };
 		C3A5D4CE19B6AD5F00346EEC /* ModelParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ModelParser.h; path = Models/ModelParser.h; sourceTree = "<group>"; };
@@ -104,8 +107,8 @@
 		C359AE2219A40A7900B23717 /* PlacesListTable */ = {
 			isa = PBXGroup;
 			children = (
-				C359AE2319A40A8F00B23717 /* PlacesListTableViewController.h */,
-				C359AE2419A40A8F00B23717 /* PlacesListTableViewController.m */,
+				C359AE2319A40A8F00B23717 /* PlacesListViewController.h */,
+				C359AE2419A40A8F00B23717 /* PlacesListViewController.m */,
 			);
 			name = PlacesListTable;
 			sourceTree = "<group>";
@@ -126,6 +129,15 @@
 				C359AE3619A4240600B23717 /* map-icon@2x.png */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		C397D5B019CBAF75006FD778 /* PlacesVisualization */ = {
+			isa = PBXGroup;
+			children = (
+				C397D5B119CBB006006FD778 /* PlacesVisualizationViewController.h */,
+				C397D5B219CBB006006FD778 /* PlacesVisualizationViewController.m */,
+			);
+			name = PlacesVisualization;
 			sourceTree = "<group>";
 		};
 		C3A5D4CA19B6AB1200346EEC /* Models */ = {
@@ -217,6 +229,7 @@
 		C3A842AD19A2D17E007D036F /* Frontend */ = {
 			isa = PBXGroup;
 			children = (
+				C397D5B019CBAF75006FD778 /* PlacesVisualization */,
 				C359AE2619A40A9B00B23717 /* Main.storyboard */,
 				C359AE2219A40A7900B23717 /* PlacesListTable */,
 				C359AE2819A40AA400B23717 /* PlacesMap */,
@@ -340,7 +353,8 @@
 				C359AE3319A4115C00B23717 /* PlacesMapViewAnnotation.m in Sources */,
 				C3A8428619A2CCFA007D036F /* main.m in Sources */,
 				C3A5D4D019B6AD5F00346EEC /* ModelParser.m in Sources */,
-				C359AE2519A40A8F00B23717 /* PlacesListTableViewController.m in Sources */,
+				C397D5B319CBB006006FD778 /* PlacesVisualizationViewController.m in Sources */,
+				C359AE2519A40A8F00B23717 /* PlacesListViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
