@@ -9,10 +9,14 @@
 #import <MapKit/MapKit.h>
 
 #import "PlacesMapViewController.h"
+
+#import "APIServiceManager.h"
+#import "Place.h"
 #import "PlacesMapViewAnnotation.h"
 
 @interface PlacesMapViewController () <MKMapViewDelegate>
 
+// UI Elements
 @property (strong, nonatomic) IBOutlet MKMapView *mapView;
 
 @end
@@ -23,9 +27,27 @@
     [super viewDidLoad];
     self.navigationItem.title = @"Mapa de Lugares";
     self.mapView.showsUserLocation = YES;
-    CLLocationCoordinate2D coordinate = CLLocationCoordinate2DMake(-34.906483, -56.199754);
-    PlacesMapViewAnnotation *dummyAnnotation = [[PlacesMapViewAnnotation alloc] initWithTitle:@"Your Location" andCoordinate:coordinate];
-    [self.mapView addAnnotation:dummyAnnotation];
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    [[APIServiceManager sharedInstance] getPlacesListWithSuccessHandler:^(NSArray *places) {
+        NSLog(@"Success!");
+        if ([places count] > 0) {
+            self.places = places;
+            [self showPlacesOnMap];
+        }
+    } onError:^(NSError *error) {
+        NSLog(@"Error");
+    }];
+}
+
+- (void)showPlacesOnMap {
+    for (Place *place in self.places) {
+        CLLocationCoordinate2D placeCoordinate = CLLocationCoordinate2DMake(place.latitude, place.longitude);
+        PlacesMapViewAnnotation *placeAnnotation = [[PlacesMapViewAnnotation alloc] initWithTitle:place.name andCoordinate:placeCoordinate];
+        [self.mapView addAnnotation:placeAnnotation];
+    }
 }
 
 @end
