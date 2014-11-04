@@ -6,11 +6,11 @@
 //  Copyright (c) 2014 AccesibleUY. All rights reserved.
 //
 
-#import "PlacesListViewController.h"
-
 #import "APIServiceManager.h"
 #import "Place.h"
 #import "PlaceDetailsTableViewController.h"
+
+#import "PlacesListViewController.h"
 
 #define kPlacesListCellIdentifier @"placesListCellIdentifier"
 

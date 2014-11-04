@@ -6,10 +6,11 @@
 //  Copyright (c) 2014 AccesibleUY. All rights reserved.
 //
 
-#import "PlaceDetailsTableViewController.h"
-
 #import <MapKit/MapKit.h>
+
 #import "PlacesMapViewAnnotation.h"
+
+#import "PlaceDetailsTableViewController.h"
 
 #define kPlaceDetailsCellIdentifier @"placesDetailsCellIdentifier"
 #define kBusinessDetailMapHeight 160

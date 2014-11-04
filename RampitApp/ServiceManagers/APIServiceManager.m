@@ -6,10 +6,10 @@
 //  Copyright (c) 2014 AccesibleUY. All rights reserved.
 //
 
-#import "APIServiceManager.h"
-
 #import "ModelParser.h"
 #import "Place.h"
+
+#import "APIServiceManager.h"
 
 #define kAPIServiceManagerBaseURL @"http://rampita-api.herokuapp.com/api/v1"
 
