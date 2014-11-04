@@ -6,9 +6,9 @@
 //  Copyright (c) 2014 AccesibleUY. All rights reserved.
 //
 
-#import "PlacesVisualizationViewController.h"
-
 #import "APIServiceManager.h"
+
+#import "PlacesVisualizationViewController.h"
 
 @interface PlacesVisualizationViewController ()
 

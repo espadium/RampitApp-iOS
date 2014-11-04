@@ -6,10 +6,11 @@
 //  Copyright (c) 2014 AccesibleUY. All rights reserved.
 //
 
-#import "PlacesListViewController.h"
-
 #import "APIServiceManager.h"
 #import "Place.h"
+#import "PlaceDetailsTableViewController.h"
+
+#import "PlacesListViewController.h"
 
 #define kPlacesListCellIdentifier @"placesListCellIdentifier"
 
@@ -69,6 +70,9 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    Place *place = self.places[indexPath.row];
+    PlaceDetailsTableViewController *detailsViewController = [[PlaceDetailsTableViewController alloc] initWithPlace:place];
+    [self.navigationController pushViewController:detailsViewController animated:YES];
 }
 
 @end

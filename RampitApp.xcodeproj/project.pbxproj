@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C359AE2519A40A8F00B23717 /* PlacesListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C359AE2419A40A8F00B23717 /* PlacesListViewController.m */; };
 		C359AE2719A40A9B00B23717 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C359AE2619A40A9B00B23717 /* Main.storyboard */; };
 		C359AE2E19A40BC000B23717 /* PlacesMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C359AE2D19A40BC000B23717 /* PlacesMapViewController.m */; };
 		C359AE3019A40EB100B23717 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C359AE2F19A40EB100B23717 /* MapKit.framework */; };
@@ -29,6 +28,8 @@
 		C3A8429519A2CCFA007D036F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3A8427D19A2CCFA007D036F /* UIKit.framework */; };
 		C3A8429D19A2CCFA007D036F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C3A8429B19A2CCFA007D036F /* InfoPlist.strings */; };
 		C3A8429F19A2CCFA007D036F /* RampitAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C3A8429E19A2CCFA007D036F /* RampitAppTests.m */; };
+		C3AE49BB19F718070027E920 /* PlacesListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3AE49BA19F718070027E920 /* PlacesListViewController.m */; };
+		C3AE49C219F723E20027E920 /* PlaceDetailsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3AE49C119F723E20027E920 /* PlaceDetailsTableViewController.m */; };
 		C3D7C5CA19AD48A400E3E3ED /* APIServiceManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C3D7C5C919AD48A400E3E3ED /* APIServiceManager.m */; };
 /* End PBXBuildFile section */
 
@@ -43,8 +44,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		C359AE2319A40A8F00B23717 /* PlacesListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PlacesListViewController.h; path = Frontend/PlacesListTable/PlacesListViewController.h; sourceTree = "<group>"; };
-		C359AE2419A40A8F00B23717 /* PlacesListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PlacesListViewController.m; path = Frontend/PlacesListTable/PlacesListViewController.m; sourceTree = "<group>"; };
 		C359AE2619A40A9B00B23717 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Frontend/Main.storyboard; sourceTree = "<group>"; };
 		C359AE2C19A40BC000B23717 /* PlacesMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PlacesMapViewController.h; path = Frontend/PlacesMap/PlacesMapViewController.h; sourceTree = "<group>"; };
 		C359AE2D19A40BC000B23717 /* PlacesMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PlacesMapViewController.m; path = Frontend/PlacesMap/PlacesMapViewController.m; sourceTree = "<group>"; };
@@ -75,6 +74,10 @@
 		C3A8429A19A2CCFA007D036F /* RampitAppTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RampitAppTests-Info.plist"; sourceTree = "<group>"; };
 		C3A8429C19A2CCFA007D036F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		C3A8429E19A2CCFA007D036F /* RampitAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RampitAppTests.m; sourceTree = "<group>"; };
+		C3AE49B919F718070027E920 /* PlacesListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PlacesListViewController.h; path = Frontend/PlacesList/PlacesListViewController.h; sourceTree = "<group>"; };
+		C3AE49BA19F718070027E920 /* PlacesListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PlacesListViewController.m; path = Frontend/PlacesList/PlacesListViewController.m; sourceTree = "<group>"; };
+		C3AE49C019F723E20027E920 /* PlaceDetailsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PlaceDetailsTableViewController.h; path = Frontend/PlaceDetails/PlaceDetailsTableViewController.h; sourceTree = "<group>"; };
+		C3AE49C119F723E20027E920 /* PlaceDetailsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PlaceDetailsTableViewController.m; path = Frontend/PlaceDetails/PlaceDetailsTableViewController.m; sourceTree = "<group>"; };
 		C3D7C5C819AD48A400E3E3ED /* APIServiceManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = APIServiceManager.h; path = ServiceManagers/APIServiceManager.h; sourceTree = "<group>"; };
 		C3D7C5C919AD48A400E3E3ED /* APIServiceManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = APIServiceManager.m; path = ServiceManagers/APIServiceManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -104,13 +107,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		C359AE2219A40A7900B23717 /* PlacesListTable */ = {
+		C359AE2219A40A7900B23717 /* PlacesList */ = {
 			isa = PBXGroup;
 			children = (
-				C359AE2319A40A8F00B23717 /* PlacesListViewController.h */,
-				C359AE2419A40A8F00B23717 /* PlacesListViewController.m */,
+				C3AE49B919F718070027E920 /* PlacesListViewController.h */,
+				C3AE49BA19F718070027E920 /* PlacesListViewController.m */,
 			);
-			name = PlacesListTable;
+			name = PlacesList;
 			sourceTree = "<group>";
 		};
 		C359AE2819A40AA400B23717 /* PlacesMap */ = {
@@ -229,14 +232,24 @@
 		C3A842AD19A2D17E007D036F /* Frontend */ = {
 			isa = PBXGroup;
 			children = (
+				C3AE49BC19F718200027E920 /* PlaceDetails */,
 				C397D5B019CBAF75006FD778 /* PlacesVisualization */,
 				C359AE2619A40A9B00B23717 /* Main.storyboard */,
-				C359AE2219A40A7900B23717 /* PlacesListTable */,
+				C359AE2219A40A7900B23717 /* PlacesList */,
 				C359AE2819A40AA400B23717 /* PlacesMap */,
 				C359AE3119A4115C00B23717 /* PlacesMapViewAnnotation.h */,
 				C359AE3219A4115C00B23717 /* PlacesMapViewAnnotation.m */,
 			);
 			name = Frontend;
+			sourceTree = "<group>";
+		};
+		C3AE49BC19F718200027E920 /* PlaceDetails */ = {
+			isa = PBXGroup;
+			children = (
+				C3AE49C019F723E20027E920 /* PlaceDetailsTableViewController.h */,
+				C3AE49C119F723E20027E920 /* PlaceDetailsTableViewController.m */,
+			);
+			name = PlaceDetails;
 			sourceTree = "<group>";
 		};
 		C3D7C5C719AD47AA00E3E3ED /* ServiceManagers */ = {
@@ -350,11 +363,12 @@
 				C3A8428A19A2CCFA007D036F /* AppDelegate.m in Sources */,
 				C3A5D4CD19B6AB2F00346EEC /* Place.m in Sources */,
 				C359AE2E19A40BC000B23717 /* PlacesMapViewController.m in Sources */,
+				C3AE49C219F723E20027E920 /* PlaceDetailsTableViewController.m in Sources */,
 				C359AE3319A4115C00B23717 /* PlacesMapViewAnnotation.m in Sources */,
 				C3A8428619A2CCFA007D036F /* main.m in Sources */,
 				C3A5D4D019B6AD5F00346EEC /* ModelParser.m in Sources */,
 				C397D5B319CBB006006FD778 /* PlacesVisualizationViewController.m in Sources */,
-				C359AE2519A40A8F00B23717 /* PlacesListViewController.m in Sources */,
+				C3AE49BB19F718070027E920 /* PlacesListViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -428,7 +442,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -461,7 +475,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -476,6 +490,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "RampitApp/RampitApp-Prefix.pch";
 				INFOPLIST_FILE = "RampitApp/RampitApp-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -489,6 +504,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "RampitApp/RampitApp-Prefix.pch";
 				INFOPLIST_FILE = "RampitApp/RampitApp-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
