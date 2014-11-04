@@ -10,6 +10,7 @@
 
 #import "APIServiceManager.h"
 #import "Place.h"
+#import "PlaceDetailsTableViewController.h"
 
 #define kPlacesListCellIdentifier @"placesListCellIdentifier"
 
@@ -69,6 +70,9 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    Place *place = self.places[indexPath.row];
+    PlaceDetailsTableViewController *detailsViewController = [[PlaceDetailsTableViewController alloc] initWithPlace:place];
+    [self.navigationController pushViewController:detailsViewController animated:YES];
 }
 
 @end
